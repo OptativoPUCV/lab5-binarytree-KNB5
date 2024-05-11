@@ -205,11 +205,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
             return aux->pair;
         }
     }    
-    if(ub_node != NULL)
-    {
-        return ub_node->pair;
-    }
-    return NULL;
+    return ub_node != NULL ? ub_node->pair : NULL;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
