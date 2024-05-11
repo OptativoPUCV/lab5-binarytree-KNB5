@@ -52,3 +52,14 @@ treemap.c:64:11: error: unused variable ‘auxPair’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 7de29bb
+Sat 11 May 2024 06:04:19 PM UTC: 
+ treemap.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:68:15: error: unused variable ‘auxPair’ [-Werror=unused-variable]
+   68 |         Pair* auxPair = aux->pair;
+      |               ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1782b37
