@@ -199,7 +199,7 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-    TreeNode* parent = tree->current->parent;
+    //TreeNode* parent = tree->current->parent;
 
     if(tree->current == tree->root && tree->root->right == NULL) return NULL;
     
