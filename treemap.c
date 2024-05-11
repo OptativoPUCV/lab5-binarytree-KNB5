@@ -218,11 +218,11 @@ Pair * nextTreeMap(TreeMap * tree) {
                 }
             }
     }
-    else
+    /*else
     { 
         TreeNode* min = minimum(tree->current->right);
         tree->current = min;
         return min->pair;
-    }
+    }*/
     return NULL;
 }
