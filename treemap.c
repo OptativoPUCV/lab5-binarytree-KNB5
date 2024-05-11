@@ -209,6 +209,7 @@ Pair * nextTreeMap(TreeMap * tree) {
             {
                 if(tree->current->pair->key < parent->pair->key)
                 {
+                    tree->current = parent;
                     return parent->pair;
                 }
                 else
