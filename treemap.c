@@ -95,9 +95,13 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
 }
 
 TreeNode * minimum(TreeNode * x){
-    
+    if(x == NULL) return NULL;
 
-    return NULL;
+    while(x->left != NULL)
+    {
+        x = x->left;        
+    }
+    return x;
 }
  
 void removeNode(TreeMap * tree, TreeNode* node) {
@@ -134,7 +138,6 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     }
     return NULL;
 }
-
 
 Pair * upperBound(TreeMap * tree, void* key) {
     return NULL;
