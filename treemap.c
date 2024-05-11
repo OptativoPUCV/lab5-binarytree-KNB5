@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 #include "treemap.h"
 
 typedef struct TreeNode TreeNode;
@@ -60,7 +61,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
     else
     {
         TreeNode* aux = tree->root;
-        while(aux != NULL)
+        while(true)
         {
             Pair* auxPair = aux->pair;
             if(key < auxPair->key)
