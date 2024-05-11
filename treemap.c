@@ -213,7 +213,7 @@ Pair * nextTreeMap(TreeMap * tree) {
                 {
                     return next = aux->pair;
                 }
-                else
+                else if(tree->current->pair->key > aux->pair->key)
                 {
                     aux = aux->parent;
                 }
