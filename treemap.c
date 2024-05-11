@@ -199,11 +199,11 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-    //TreeNode* parent = tree->current->parent;
+    TreeNode* parent = tree->current->parent;
 
     if(tree->current == tree->root && tree->root->right == NULL) return NULL;
     
-    /*if(tree->current->right == NULL)
+    if(tree->current->right == NULL)
     {
         while(parent != NULL)
             {
@@ -217,8 +217,8 @@ Pair * nextTreeMap(TreeMap * tree) {
                     parent = parent->parent;
                 }
             }
-    }*/
-    if(tree->current->right != NULL)
+    }
+    else
     { 
         TreeNode* min = minimum(tree->current->right);
         tree->current = min;
