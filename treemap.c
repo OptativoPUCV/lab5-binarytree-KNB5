@@ -153,7 +153,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
         node->pair->value = min->pair->value;
         removeNode(tree, min);
     }
-}*/
+}
 
 void eraseTreeMap(TreeMap * tree, void* key){
     if (tree == NULL || tree->root == NULL) return;
